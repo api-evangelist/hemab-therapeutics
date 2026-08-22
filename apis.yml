@@ -1,17 +1,35 @@
 aid: hemab-therapeutics
 name: Hemab Therapeutics
-description: 'Hemab Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Hemab Therapeutics is a clinical-stage biopharmaceutical company headquartered
+  in Copenhagen, Denmark with a US presence in Cambridge, Massachusetts, developing
+  prophylactic antibody-based therapeutics for serious, underserved bleeding and thrombotic
+  disorders. Its modality-agnostic approach uses monoclonal and bispecific antibodies to
+  stabilize coagulation proteins, prevent their premature breakdown, and direct them to
+  sites of injury. The clinical pipeline targets Glanzmann Thrombasthenia (sutacimig,
+  HMB-001), von Willebrand Disease (HMB-002), Factor VII deficiency and heavy menstrual
+  bleeding. Hemab publishes a corporate marketing site, an investor relations site, and
+  audience-specific sections for patients, caregivers and healthcare providers. It
+  operates no public developer program: there is no developer portal, API reference,
+  machine-readable specification, SDK, or webhook surface on any host it controls.'
+image: https://cdn.prod.website-files.com/683e244b9c2c9828c10be2ed/68505c0989a11b7e82490360_Webclip.png
 url: https://raw.githubusercontent.com/api-evangelist/hemab-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass-completed-no-api-surface
 specificationVersion: '0.20'
 created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Clinical Trials
+- Healthcare
+- Rare Disease
+- Hematology
+- Denmark
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,54 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hemab-therapeutics-domain-security.yml
+- type: LLMsTxt
+  url: llms/hemab-therapeutics-llms.txt
 - type: Website
+  url: https://www.hemab.com/
+- type: PrivacyPolicy
+  url: https://www.hemab.com/privacy-policy
+- type: TermsOfService
+  url: https://www.hemab.com/terms-conditions
+- type: Support
+  url: https://www.hemab.com/contact-us
+- type: Blog
+  url: https://www.hemab.com/news-media-hub
+- type: About
+  url: https://www.hemab.com/about-us
+- type: InvestorRelations
+  url: https://ir.hemab.com
+- type: Careers
+  url: https://career.hitalento.com/hemab/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/hemabaps/
+- type: Twitter
+  url: https://x.com/hemab_tx
+- type: SecondaryMarketListing
   url: https://forgeglobal.com/hemab-therapeutics_stock/
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Hemab Therapeutics is a clinical-stage antibody biopharma whose only web properties are a
+    Webflow marketing site and a third-party investor-relations host; www.hemab.com returns 404
+    for every OpenAPI, GraphQL and /.well-known/ path probed, and api./developer./docs.hemab.com
+    do not resolve in DNS, so there is no API surface to profile.
+  evidence:
+  - url: https://www.hemab.com/openapi.json
+    status: 404
+  - url: https://www.hemab.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.hemab.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.hemab.com/llms.txt
+    status: 404
+  - url: https://www.hemab.com/
+    status: 200
+  checked: '2026-08-22'

@@ -1,0 +1,50 @@
+generated: '2026-08-22'
+method: probed
+source: live HTTPS probes of the /.well-known/ namespace on every host Hemab Therapeutics controls
+note: >-
+  Every probed path returned 404 on both the apex and www hosts. Hemab's corporate site is a
+  Webflow deployment whose /.well-known/* catch-all answers "Invalid .well-known path" with a
+  404 status, so nothing here is a document. No WellKnown, APICatalog or SecurityTxt pointer is
+  emitted in apis.yml: this file records a measured ABSENCE, not a served surface. The
+  subdomains api.hemab.com, developer.hemab.com and docs.hemab.com do not resolve in DNS.
+hosts:
+- host: hemab.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+- host: www.hemab.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

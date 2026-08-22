@@ -64,5 +64,9 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Hemab Therapeutics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/hemab-therapeutics_stock/
+Hemab Therapeutics is a clinical-stage biopharmaceutical company (Copenhagen, Denmark; Cambridge, Massachusetts) developing prophylactic monoclonal and bispecific antibody therapeutics for serious, underserved bleeding and thrombotic disorders, including Glanzmann Thrombasthenia, von Willebrand Disease and Factor VII deficiency.
+
+**No API surface.** An enrichment pass on 2026-08-22 found no developer portal, API reference, OpenAPI/GraphQL/AsyncAPI contract, SDK, MCP server, agent card or `/.well-known/` document on any host Hemab controls. See `x-coverage` in `apis.yml` for the probed evidence.
+
+- https://www.hemab.com/
+- https://forgeglobal.com/hemab-therapeutics_stock/ (secondary-market listing)
