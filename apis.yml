@@ -11,6 +11,17 @@ description: 'Hemab Therapeutics is a clinical-stage biopharmaceutical company h
   audience-specific sections for patients, caregivers and healthcare providers. It
   operates no public developer program: there is no developer portal, API reference,
   machine-readable specification, SDK, or webhook surface on any host it controls.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/683e244b9c2c9828c10be2ed/68505c0989a11b7e82490360_Webclip.png
 url: https://raw.githubusercontent.com/api-evangelist/hemab-therapeutics/refs/heads/main/apis.yml
 x-type: company
