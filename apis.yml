@@ -22,6 +22,18 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/683e244b9c2c9828c10be2ed/68505c0989a11b7e82490360_Webclip.png
 url: https://raw.githubusercontent.com/api-evangelist/hemab-therapeutics/refs/heads/main/apis.yml
 x-type: company
